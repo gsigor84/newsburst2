@@ -1,14 +1,14 @@
 'use client';
 
+import Link from 'next/link';
+
 export default function WorkPage() {
   return (
     <main className="min-h-screen bg-[#0a0a0a] text-white px-6 md:px-12 py-20 space-y-16">
-      {/* Title */}
       <h1 className="text-5xl md:text-7xl font-bold uppercase tracking-tight">
         Our Work
       </h1>
 
-      {/* Project Summary */}
       <div className="max-w-3xl space-y-6 text-lg opacity-90 leading-relaxed">
         <p>
           NewsBurst2 is more than a news site — it's a bold experiment in
@@ -24,20 +24,20 @@ export default function WorkPage() {
         </p>
       </div>
 
-      {/* Call to Action */}
+      {/* ✅ Use Link instead of <a> */}
       <div className="flex gap-4">
-        <a
+        <Link
           href="/"
           className="inline-block mt-4 px-6 py-3 border border-white text-white uppercase tracking-widest text-sm rounded hover:bg-white hover:text-black transition-all duration-200"
         >
           back home
-        </a>
-        <a
+        </Link>
+        <Link
           href="/contact"
           className="inline-block mt-4 px-6 py-3 border border-white text-white uppercase tracking-widest text-sm rounded hover:bg-white hover:text-black transition-all duration-200"
         >
           contact
-        </a>
+        </Link>
       </div>
     </main>
   );
