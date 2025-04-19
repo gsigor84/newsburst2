@@ -1,26 +1,25 @@
 'use client';
 
+import Link from "next/link";
+
 export default function ContactPage() {
   return (
     <main className="min-h-screen bg-[#0a0a0a] text-white px-6 md:px-12 py-20 space-y-16">
-      {/* Title */}
       <h1 className="text-5xl md:text-7xl font-bold uppercase tracking-tight">
         Contact
       </h1>
 
-      {/* Description */}
       <div className="max-w-3xl space-y-6 text-lg opacity-90 leading-relaxed">
         <p>
           Have a question, collaboration idea, or just want to say hi?
-          We're always open to new conversations and connections.
+          We&rsquo;re always open to new conversations
         </p>
         <p>
-          Drop us a message using your favorite channel. We’ll get back
+          Drop us a message using your favorite channel. We&rsquo;ll get back
           to you as soon as we can.
         </p>
       </div>
 
-      {/* Contact Options */}
       <div className="space-y-4 text-lg">
         <p>
           Email:{" "}
@@ -55,14 +54,13 @@ export default function ContactPage() {
         </p>
       </div>
 
-      {/* Back Home Button */}
       <div className="pt-6">
-        <a
+        <Link
           href="/"
           className="inline-block px-6 py-3 border border-white text-white uppercase tracking-widest text-sm rounded hover:bg-white hover:text-black transition-all duration-200"
         >
           back home
-        </a>
+        </Link>
       </div>
     </main>
   );

@@ -1,5 +1,7 @@
 'use client';
 
+import Link from 'next/link';
+
 export default function AboutPage() {
   return (
     <main className="min-h-screen bg-[#0a0a0a] text-white px-6 md:px-12 py-20 space-y-16">
@@ -28,22 +30,20 @@ export default function AboutPage() {
       </div>
 
       {/* Call to Action */}
-      {/* Call to Action */}
       <div className="flex flex-col sm:flex-row gap-4">
-        <a
+        <Link
           href="/contact"
           className="inline-block px-6 py-3 border border-white text-white uppercase tracking-widest text-sm rounded hover:bg-white hover:text-black transition-all duration-200"
         >
           contact us
-        </a>
-        <a
+        </Link>
+        <Link
           href="/"
           className="inline-block px-6 py-3 border border-white text-white uppercase tracking-widest text-sm rounded hover:bg-white hover:text-black transition-all duration-200"
         >
           back to home
-        </a>
+        </Link>
       </div>
-
     </main>
   );
 }

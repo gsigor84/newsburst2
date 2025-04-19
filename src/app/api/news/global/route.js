@@ -5,7 +5,7 @@ import { MongoClient } from "mongodb";
 // ✅ MongoDB Configuration
 const MONGO_URI = process.env.MONGO_URI; // Use env variable
 const DATABASE_NAME = "AI-News-Project";
-const COLLECTION_NAME = "blog_news"; // Blog/Global News Collection
+const COLLECTION_NAME = "news"; // Blog/Global News Collection
 
 export async function GET() {
   let client;

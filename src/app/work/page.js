@@ -11,7 +11,7 @@ export default function WorkPage() {
 
       <div className="max-w-3xl space-y-6 text-lg opacity-90 leading-relaxed">
         <p>
-          NewsBurst2 is more than a news site — it's a bold experiment in
+          NewsBurst2 is more than a news site — it&rsquo;s a bold experiment in
           information design. Every section is optimized for visual clarity and high signal-to-noise ratio.
         </p>
         <p>

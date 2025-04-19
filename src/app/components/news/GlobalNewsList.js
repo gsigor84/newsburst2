@@ -31,13 +31,10 @@ export default function GlobalNewsList() {
         GLOBAL
       </h2>
 
-
       <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-        {news.map((item, index) => (
+        {news.slice(0, 6).map((item, index) => (
           <div key={index} className="contents">
-            <li
-              className="overflow-hidden pb-3 border-b border-black/90 md:border-b-0"
-            >
+            <li className="overflow-hidden pb-3 border-b border-black/90 md:border-b-0">
               <a
                 href={item.url}
                 target="_blank"
@@ -45,7 +42,7 @@ export default function GlobalNewsList() {
                 className="block transition-opacity hover:opacity-90"
               >
                 <img
-                  src={item.image}
+                  src={item.image?.startsWith('http') ? item.image : '/placeholder.jpg'}
                   alt={item.headline}
                   className="w-full h-44 object-cover rounded-md"
                 />
@@ -57,14 +54,12 @@ export default function GlobalNewsList() {
               </a>
             </li>
 
-            {/* Full-width line after every 3 items (on desktop only) */}
             {(index + 1) % 3 === 0 && (
               <div className="hidden lg:block col-span-3 border-b border-black/90 my-2" />
             )}
           </div>
         ))}
       </ul>
-
     </section>
   );
 }
