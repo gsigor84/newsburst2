@@ -33,7 +33,7 @@ export default function RecommendationsList() {
 
   return (
     <section className="pt-10 pb-16 px-2 sm:px-2 md:px-2">
-      <h2 className="text-2xl lg:text-6xl font-semibold mb-8 tracking-tight text-foreground uppercase">
+      <h2 className="text-4xl lg:text-6xl font-semibold mb-8 tracking-tight text-foreground uppercase">
         AI RECOMMENDATIONS
       </h2>
 
