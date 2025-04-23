@@ -31,9 +31,10 @@ export default function Home() {
 
   return (
     <main className="min-h-screen mt-9 px-2 sm:px-4 py-10 space-y-16 bg-background text-foreground">
-      <h1 className="text-4xl pt-29  font-bold tracking-tight text-center">
+      <h1 className="pt-6 sm:pt-29  text-5xl sm:text-4xl font-bold tracking-tight text-center">
         Signal Over Noise
       </h1>
+
 
       <section>
         <GlobalNewsList />
